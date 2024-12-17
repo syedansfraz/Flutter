@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ListViewExample extends StatelessWidget {
+  const ListViewExample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView(
-        children: [
+        children: const [
           ListTile(
             leading: Icon(Icons.person),
             title: Text('John Doe'),

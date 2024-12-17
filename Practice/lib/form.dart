@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 Widget buildForm(BuildContext context) {
-  final _nameController = TextEditingController();
-  final _emailController = TextEditingController();
-  final _phoneController = TextEditingController();
-  final _addressController = TextEditingController();
+  final nameController = TextEditingController();
+  final emailController = TextEditingController();
+  final phoneController = TextEditingController();
+  final addressController = TextEditingController();
 
   return Padding(
     padding: const EdgeInsets.all(20.0), // Padding around the form
@@ -14,7 +14,7 @@ Widget buildForm(BuildContext context) {
         Padding(
           padding: const EdgeInsets.only(bottom: 16.0), // Spacing after Name field
           child: TextField(
-            controller: _nameController,
+            controller: nameController,
             decoration: const InputDecoration(
               labelText: "Name",
             ),
@@ -24,7 +24,7 @@ Widget buildForm(BuildContext context) {
         Padding(
           padding: const EdgeInsets.only(bottom: 16.0), // Spacing after Email field
           child: TextField(
-            controller: _emailController,
+            controller: emailController,
             decoration: const InputDecoration(
               labelText: "Email",
             ),
@@ -34,7 +34,7 @@ Widget buildForm(BuildContext context) {
         Padding(
           padding: const EdgeInsets.only(bottom: 16.0), // Spacing after Phone field
           child: TextField(
-            controller: _phoneController,
+            controller: phoneController,
             decoration: const InputDecoration(
               labelText: "Phone No.",
             ),
@@ -44,7 +44,7 @@ Widget buildForm(BuildContext context) {
         Padding(
           padding: const EdgeInsets.only(bottom: 16.0), // Spacing after Address field
           child: TextField(
-            controller: _addressController,
+            controller: addressController,
             decoration: const InputDecoration(
               labelText: "Address",
             ),

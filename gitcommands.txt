@@ -1,0 +1,10 @@
+*PUSH UPDATES*
+git status
+git add .
+git commit -m "Describe the changes you made"
+git push origin main
+*PUSH NEW FILE"
+git init
+git add .
+git commit -m "Initial commit"
+git push -u origin main
